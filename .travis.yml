@@ -41,7 +41,7 @@ matrix:
       jdk: oraclejdk8
     - env:
       - CI_SCRIPT: '"fastparseJVM/test; fastparseJS/test; fastparseByteJVM/test; fastparseByteJS/test"'
-      scala: 2.13.0-M5
+      scala: 2.13.5
       jdk: oraclejdk8
 
     # Also cross-test scalaparse and byteparse to stress-test fastparse in a
@@ -70,7 +70,7 @@ matrix:
       jdk: oraclejdk8
     - env:
       - CI_SCRIPT: '"scalaparseJVM/test; scalaparseJS/test"'
-      scala: 2.13.0-M5
+      scala: 2.13.5
       jdk: oraclejdk8
 
     # Scala Native only supports 2.11. The before_install takes a while so we
